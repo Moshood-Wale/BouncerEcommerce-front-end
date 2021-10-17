@@ -5,6 +5,9 @@ import MyLoader from '../../utils/loader'
 
 import HomePage from '../../pages/HomePage'
 
+// RegisterPage
+import RegisterPage from '../../pages/RegisterPage';
+
 const App = () => (
   <Suspense fallback={ 
     <div>
@@ -13,6 +16,7 @@ const App = () => (
   }>
     <Switch>
       <Route exact path='/' component={HomePage} />
+      <Route exact path='/register' component={RegisterPage} />
     </Switch>
   </Suspense>
 )
