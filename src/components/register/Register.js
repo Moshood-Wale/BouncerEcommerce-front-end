@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import Laptop from "./LaptopLogo";
 import { Link } from 'react-router-dom';
 import RegisterWrapper from "./style";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 
+const eye = <FontAwesomeIcon icon={faEye} />;
+const eyeSlash = <FontAwesomeIcon icon={faEyeSlash} />;
 
 function Register() {
+    const [passwordShown, setPasswordShown] = useState(false);
+
+    const togglePassword = () => {
+        setPasswordShown(!passwordShown);
+    };
+
+    const [resetPasswordShown, setresetPasswordShown] = useState(false);
+
+    const resetTogglePassword = () => {
+        setresetPasswordShown(!resetPasswordShown);
+    }
+    
     return (
         <RegisterWrapper>
         <div className="main-container">
@@ -39,16 +55,16 @@ function Register() {
                     <div className="password">
                         <div class="password-eye">
                             <label for="password">Password:</label> 
-                            <Link to="#"><i className="fas fa-eye-slash"></i></Link>
+                            <Link to="#"><i className="eye" onClick={togglePassword}>{passwordShown?eye:eyeSlash}</i></Link>
                         </div>
-                        <input type="password" required /> <br />
+                        <input type={passwordShown ? "text": "password"} required /> <br />
                     </div>
                     <div className="password">
                         <div class="password-eye">
                             <label for="password">Confirm Password:</label> 
-                            <Link to="#"><i className="fas fa-eye-slash"></i></Link>
+                            <Link to="#"><i className="eye" onClick={resetTogglePassword}>{resetPasswordShown?eye:eyeSlash}</i></Link>
                         </div>
-                        <input type="password" required /> <br />
+                        <input type={resetPasswordShown ? "text": "password"} required /> <br />
                     </div>
                     <input type="submit" value="Sign Up" />
                     <div className="bottom">

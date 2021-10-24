@@ -7,14 +7,14 @@ const RegisterWrapper = styled.div`
 .main{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 50px;
+    grid-column-gap: 10px;
 }
 .main img{
     width: 100%;
 }
 
 .sub-main{
-    width: 100%;
+    width: 60%;
    margin: 0 auto;
    padding: 0 20px;
 }
@@ -101,7 +101,7 @@ const RegisterWrapper = styled.div`
 }
 
 .sub-main .first-name{
-    padding-top: 3.75rem;
+    padding-top: 1.00rem;
 }
 .sub-main .first-name > label, .sub-main .last-name > label,
 .sub-main .username-two > label, .sub-main .email > label,
