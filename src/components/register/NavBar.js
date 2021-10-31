@@ -1,7 +1,9 @@
+import { Link } from 'react-router-dom';
+
 function NavBar()  {
     return (
         <div className="Logo" data-testid="logo">
-            <a href="https://bouncerapp.netlify.app/"><img src="./logo_alcxme.svg" alt="" /></a>
+            <Link to="/home"><img src="./logo_alcxme.svg" alt="" /></Link>
         </div>
     )
 }
