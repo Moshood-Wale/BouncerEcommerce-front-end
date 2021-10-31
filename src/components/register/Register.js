@@ -94,10 +94,6 @@ function Register() {
                         <label for="text" required>Last name:</label><br />
                         <input type="text"  onChange={(e)=>setLastName(e.target.value)}/> <br />
                     </div>
-                    <div className="username-two">
-                        <label for="text" required>Username:</label><br />
-                        <input type="text"  /> <br />
-                    </div>
                     <div className="email">
                         <label for="text" required>Email:</label><br />
                         <input type="email"  onChange={(e)=>setEmail(e.target.value)}/> <br />

@@ -1,7 +1,7 @@
 function NavBar()  {
     return (
         <div className="Logo" data-testid="logo">
-            <img src="./logo_alcxme.svg" alt="" />
+            <a href="https://bouncerapp.netlify.app/"><img src="./logo_alcxme.svg" alt="" /></a>
         </div>
     )
 }
