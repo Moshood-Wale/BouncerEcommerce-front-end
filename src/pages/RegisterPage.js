@@ -3,7 +3,6 @@ import Register from '../components/register/Register';
 import '../styles/registerpage.css';
 
 
-
 function RegisterPage() {
   return (
     <div className="container">

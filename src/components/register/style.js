@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 const RegisterWrapper = styled.div`
 .main-container {
     margin-top: 50px;

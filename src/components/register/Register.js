@@ -8,6 +8,7 @@ import { toast } from 'react-toastify';
 import axios from 'axios';
 import { useHistory } from "react-router";
 
+
 const eye = <FontAwesomeIcon icon={faEye} />;
 const eyeSlash = <FontAwesomeIcon icon={faEyeSlash} />;
 
@@ -17,15 +18,12 @@ function Register() {
     const [last_name, setLastName] = useState("")
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
-    
-
     const history = useHistory();
-    const [passwordShown, setPasswordShown] = useState(false);
-    const [resetPasswordShown, setresetPasswordShown] = useState(false);
-
     const [error, setError] = useState(null)
 
-
+    const [passwordShown, setPasswordShown] = useState(false);
+    const [resetPasswordShown, setresetPasswordShown] = useState(false);
+    
     function signUp(e) {
         e.preventDefault();
 
@@ -61,7 +59,6 @@ function Register() {
               })
             
     }
-
 
     const togglePassword = () => {
         setPasswordShown(!passwordShown);

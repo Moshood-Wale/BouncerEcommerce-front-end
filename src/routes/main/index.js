@@ -1,13 +1,11 @@
-import { Suspense } from 'react'
-
+import { Suspense } from 'react';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import MyLoader from '../../utils/loader'
-
-import HomePage from '../../pages/HomePage'
+import MyLoader from '../../utils/loader';
+import HomePage from '../../pages/HomePage';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-// RegisterPage
 import RegisterPage from '../../pages/RegisterPage';
+
 
 const App = () => (
   <Suspense fallback={
@@ -25,4 +23,4 @@ const App = () => (
   </Suspense>
 )
 
-export default App
+export default App;

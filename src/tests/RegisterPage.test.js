@@ -4,7 +4,6 @@ import '@testing-library/jest-dom/extend-expect';
 import Laptop from '../components/register/LaptopLogo';
 
 
-
 test('renders laptop component role', () => {
     render(<Laptop />);
     const headingElement = screen.getByRole("img")
@@ -16,4 +15,3 @@ test('renders navbar by laptopimg ID', () => {
     const headingElement = screen.getByTestId("laptopimg")
     expect(headingElement).toBeInTheDocument();
 });
-
