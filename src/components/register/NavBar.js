@@ -1,7 +1,10 @@
+import { Link } from 'react-router-dom';
+
+
 function NavBar()  {
     return (
         <div className="Logo" data-testid="logo">
-            <img src="./logo_alcxme.svg" alt="" />
+            <Link to=""><img src="./logo_alcxme.svg" alt="" /></Link>
         </div>
     )
 }
