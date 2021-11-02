@@ -1,20 +1,26 @@
-import { Suspense } from 'react'
+import { Suspense } from 'react';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import MyLoader from '../../utils/loader';
+import HomePage from '../../pages/HomePage';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import RegisterPage from '../../pages/RegisterPage';
 
-import { Route, Switch } from "react-router-dom";
-import MyLoader from '../../utils/loader'
-
-import HomePage from '../../pages/HomePage'
 
 const App = () => (
-  <Suspense fallback={ 
+  <Suspense fallback={
     <div>
-      <MyLoader /> 
+      <MyLoader />
     </div>
   }>
-    <Switch>
-      <Route exact path='/' component={HomePage} />
-    </Switch>
+    <ToastContainer />
+    <BrowserRouter>
+      <Switch>
+        <Route exact path='/' component={HomePage} />
+        <Route exact path='/register' component={RegisterPage} />
+      </Switch>
+    </BrowserRouter>
   </Suspense>
 )
 
-export default App
+export default App;
