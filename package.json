@@ -14,7 +14,7 @@
     "react": "^17.0.2",
     "react-content-loader": "^6.0.3",
     "react-dom": "^17.0.2",
-    "react-global-components": "^0.1.25",
+    "react-icons": "^4.3.1",
     "react-redux": "^7.2.4",
     "react-responsive-carousel": "^3.2.22",
     "react-router-dom": "^5.2.0",
@@ -54,9 +54,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    
-  }
-
-  
+  "devDependencies": {}
 }
