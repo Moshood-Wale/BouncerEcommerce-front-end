@@ -6,6 +6,7 @@ import LoginPage from '../../pages/Login';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import RegisterPage from '../../pages/RegisterPage';
+import VerifyOtpPage from '../../pages/VerifyOtpPage';
 
 
 const App = () => (
@@ -15,12 +16,12 @@ const App = () => (
     </div>
   }>
     <ToastContainer />
-
    <BrowserRouter>
     <Switch>
         <Route exact path='/' component={HomePage} />
         <Route exact path='/register' component={RegisterPage} />
         <Route exact path='/login' component={LoginPage} />
+        <Route exact path='/verify' component={VerifyOtpPage} />
       </Switch>
    </BrowserRouter>
 

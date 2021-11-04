@@ -45,7 +45,7 @@ function Register() {
             .then(response => {
                     toast("Registration Successful. Please check your mail to verify the otp code sent to you.", {type: "success"})
                     console.log("error")
-                    history.push("/login");
+                    history.push("/verify");
                 }, err => {
                 console.log({err});
                 if (err.response.status === 400) {
