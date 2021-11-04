@@ -9,7 +9,7 @@ function Delivery() {
                 <div className="delivery">
                     <div>
                         <div className="delivery-icon">
-                            <img src="img/download (1).png" alt="free shipping_icon" />
+                            <img style={{ height:50, width:65}} src="img/download (1).png" alt="free shipping_icon" />
                         </div>
                         <h1>FREE SHIPPING</h1>
                         <p>
@@ -21,7 +21,7 @@ function Delivery() {
                     </div>
                     <div>
                         <div className="delivery-icon">
-                            <img src="img/download (2).png" alt="100% shipping_icon" />
+                            <img style={{ height:60, width:45}} src="img/download (2).png" alt="100% shipping_icon" />
                         </div>
                         <h1>100% REFUND</h1>
                         <p>
@@ -33,7 +33,7 @@ function Delivery() {
                     </div>
                     <div>
                         <div className="delivery-icon">
-                            <img src="img/download.png" alt="SUPPORT 24/7 icon" />
+                            <img style={{ height:60, width:45}} src="img/download.png" alt="SUPPORT 24/7 icon" />
                         </div>
                         <h1>SUPPORT 24/7</h1>
                         <p>

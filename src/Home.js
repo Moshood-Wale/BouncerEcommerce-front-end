@@ -18,7 +18,7 @@ function Home() {
         <div>
             <TopNav />
             < NavBarPage />
-            <Slider/>,
+            <Slider/>
             < CarouselSection />
             <NavItem />
             <Product />

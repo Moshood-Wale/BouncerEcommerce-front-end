@@ -33,7 +33,10 @@ function TopNav() {
                             <span><Link href="#" class="user-profile">My profile</Link></span>
                             <span className="basket-shopping"><i className="fas fa-shopping-basket"></i></span>0 items
                             <span className="amount-cart">$0.00</span>
-                            <span className="search"><i class="fas fa-search"></i></span>
+                            {/* <span className="search"><i class="fas fa-search"></i></span> */}
+                            <Link to="/register" className="reglog"> <span className="register">Register </span></Link>
+                            <Link to="/login" className="reglog"><span className="login">Login</span></Link>
+                            
                         </div>
                     </UserSection>
                 </div>

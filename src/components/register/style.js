@@ -1,5 +1,18 @@
 import styled from "styled-components";
 
+export const LogoBanner = styled.div`
+    margin-top: 10px;
+        img{
+            width: 20%;
+        }
+    @media only screen and (max-width: 767px) {
+        img{
+            width: 40%;
+        }
+      }
+
+    `
+    
 
 const RegisterWrapper = styled.div`
 .main-container {

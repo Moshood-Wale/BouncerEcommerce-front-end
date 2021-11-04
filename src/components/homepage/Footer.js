@@ -9,12 +9,12 @@ function Footer() {
                 <div>
                     <div>
                         <p>
-                            © 2018 Ecommerce theme by www.bisenbaev.com
+                            © 2021 Ecommerce by Python Stack Squad 8
                         </p>
                     </div>
-                    <div>
+                    <div style={{display:'flex'}} className="payment-card-image">
                         <Link href="/"> 
-                             <img src="img/Western-union.4fe21200.svg" alt="Western-union pic" />
+                             < img src="img/Western-union.4fe21200.svg" alt="Western-union pic" />
                         </Link>
                         <Link href="/">
                             <img src="img/mastercard.f8415f65.svg" alt="mastercard pic" />

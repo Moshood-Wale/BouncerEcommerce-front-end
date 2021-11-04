@@ -55,4 +55,9 @@ export const UserSection = styled.div`
     .fas {
         color: black;
     }
+    .reglog{
+        text-decoration: none;
+        margin: 5px;
+        color: black;
+    }
 `

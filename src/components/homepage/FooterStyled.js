@@ -11,6 +11,7 @@ export const FooterWrapper = styled.section`
         justify-content: space-between;
         flex-wrap: wrap;
     }
+   
 
     .footer-bottom div > div:last-child a{
         margin: 0 5px;

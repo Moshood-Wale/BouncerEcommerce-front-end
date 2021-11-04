@@ -1,14 +1,13 @@
 import styled from 'styled-components';
 
 export const DeliveryWrapper = styled.section`
-        max-width: 1200px;
         margin: 0px auto;
         padding: 0 2rem; 
     .delivery{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-self: center;
-        grid-column-gap: 50px;
+        grid-column-gap: 20px;
     }
 
     .delivery .delivery-icon{
@@ -27,6 +26,7 @@ export const DeliveryWrapper = styled.section`
     .delivery div > p{
         font-weight: 300;
         text-align:start;
+        width: 100%;
     }
 
     @media only screen and (max-width: 767px){

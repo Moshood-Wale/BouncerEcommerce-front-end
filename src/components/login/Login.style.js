@@ -11,6 +11,11 @@ export const LoginWrapper = styled.section`
         grid-column-gap: 60px;
        
     }
+    .home-btn img{
+         
+            margin-top: 10px;
+            width: 20%;
+    }
     .image-banner > img {
         width: 100%;
     }
@@ -88,4 +93,9 @@ export const LoginWrapper = styled.section`
 
         }
     }
+     @media only screen and (max-width: 767px) {
+        img{
+            width: 40%;
+        }
+      }
     `
