@@ -117,7 +117,7 @@ function Register() {
                             <Link className="vendor" to="/vendor">Become a vendor</Link>
                         </div>
                          <div className="forgot-password">
-                             <Link to="/reset-password">Forgot password</Link>
+                             <Link to="/forgot-password">Forgot password</Link>
                          </div>
                     </div>
                 </div>

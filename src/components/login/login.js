@@ -107,7 +107,7 @@ const Login = () => {
                             <Link className="base-content" to="/">Become a vendor</Link>
                         </div>
                         <div>
-                            <Link className="base-content" to="/reset-password">Forgot Password</Link>
+                            <Link className="base-content" to="/forgot-password">Forgot Password</Link>
                         </div>
                     </div>
 

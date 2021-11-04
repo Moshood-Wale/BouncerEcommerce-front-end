@@ -7,6 +7,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import RegisterPage from '../../pages/RegisterPage';
 import VerifyOtpPage from '../../pages/VerifyOtpPage';
+import ForgotPasswordPage from "../../pages/ForgotPassword"
 
 
 const App = () => (
@@ -22,8 +23,9 @@ const App = () => (
         <Route exact path='/register' component={RegisterPage} />
         <Route exact path='/login' component={LoginPage} />
         <Route exact path='/verify' component={VerifyOtpPage} />
+        <Route exact path='/forgot-password' component={ForgotPasswordPage} />
       </Switch>
-   </BrowserRouter>
+    </BrowserRouter>
 
   </Suspense>
 )
